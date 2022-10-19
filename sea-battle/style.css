@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    font-family: cursive;
+    font-size: 18px;   
+}
+
+.header {
+    height: 40px;
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    text-align: center;
+    font-size: 25px;
+    background-color: #fff0e3;
+    border: 2px solid #e8793e;
+    border-radius:10px;
+}
+
+.text-block {
+    font-size: 16px;   
+    margin: 0px 200px;
+    padding: 20px; 
+    border: 2px solid #e8793e; 
+}
+
+#gameArea{
+    margin: 0 auto;
+    width: 800px;
+    padding: 20px;
+}
+#gameArea .pcGameArea, #gameArea .userGameArea{
+    width: 50%;
+    float:left;
+    margin: 0 0 35px 0;
+    display: block;
+}
+#gameArea .gameField{
+    margin: 5px 15px 0 0;
+    display: block;
+    padding:10;
+}
+#gameArea .gameField div{
+    margin: -1px;
+    position: relative;
+    float: left;
+    background-color: #dbefff;
+    border: 1px solid #1959d1;
+    text-align: center;
+    color: #black;
+}
+#gameArea .gameField .ship{
+    background-color: #914e0c;
+    border: 1px solid #140f0b;
+}
+#gameArea .btn{
+    margin: 0 auto;
+    cursor: pointer;
+    border: 2px solid #00587a;
+    border-radius:10px;
+    height: 55px;
+    background: #14bdff;
+    font-size: 1.4em;
+    text-align: center;
+    vertical-align: middle;
+    padding: 6px 12px;
+}
+
+.button {
+    cursor: pointer;
+    font-size: 24px;
+    border: 2px solid #331a00;
+    border-radius:10px;
+    height: 70px;
+    color: #fff;
+    background: #964b00;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

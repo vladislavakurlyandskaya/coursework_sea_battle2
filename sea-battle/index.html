@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Морской бой</title>
+        <meta name="description" content="">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    
+<body>
+    <div class="header">Морской бой</div>
+       
+    <br><br><center><img width="500px" src="морской_бой.jpg"></center>
+   
+    <h3 align="center">Правила игры</h3>
+
+    <div class="text-block">         
+        <p>Цель игры - потопить все корабли, находящиеся на игровом поле.</p>
+        <p>Игровое поле представляет собой квадрат, состоящий из 10 строк и 10 столбцов. 
+        Строки обозначены буква русского алфавита от А до К, а столбцы - арабскими цифрами от 1 до 10. 
+        На игровом поле хаотично расположены корабли: 4 однопалубных, 3 двухпалубных, 2 трехпалубных и 1 четырехпалубный. 
+        На поле не допускается соприкосновение соседних кораблей углами и сторонами.</p>
+        <p>Ведение морского боя осуществляется путем поочередного выстрела по полю соперника. 
+        Координаты выстрела передаются путём клика по выбранной клетке. Попадание отмечается крестиком, промах — точкой. 
+        Если игрок попадает, у него есть право повторного удара.</p>
+   </div>
+
+    <div id="gameArea">     
+        <button class="button" onclick="runGame(true)">Начать игру</button>     
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+        function runGame(startImmediatly) {
+            var game = new SeeBattle('gameArea');
+            game.run();
+
+            if (startImmediatly) {
+               game.startNewGame();
+            }
+        }
+    </script>
+</body>
+</html>
